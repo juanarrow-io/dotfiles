@@ -1,0 +1,23 @@
+# Tokyo Nebula Aurora
+palette = 0=#0a0c14
+palette = 1=#ff6188
+palette = 2=#7ce38b
+palette = 3=#ffd866
+palette = 4=#7aa2f7
+palette = 5=#a78bfa
+palette = 6=#00d4ff
+palette = 7=#c0caf5
+palette = 8=#3b4261
+palette = 9=#ff85a1
+palette = 10=#9eff9b
+palette = 11=#ffe98a
+palette = 12=#a4c0ff
+palette = 13=#c4a8ff
+palette = 14=#5ff0ff
+palette = 15=#ffffff
+background = #16161e
+foreground = #787c99
+cursor-color = #c0caf5
+cursor-text = #16161e
+selection-background = #56658d
+selection-foreground = #787c99

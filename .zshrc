@@ -1,3 +1,4 @@
+set -o noclobber
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
@@ -37,7 +38,7 @@ DISABLE_AUTO_TITLE="true"
 plugins=(git zsh-syntax-highlighting zsh-autosuggestions you-should-use zsh-bat)
 source $ZSH/oh-my-zsh.sh
 
-eval "$(oh-my-posh init zsh --config ~/tokyo-nebula.omp.json)"
+eval "$(oh-my-posh init zsh --config ~/.config/oh-my-posh/tokyo-nebula.omp.json)"
 
 # ── Homebrew ──────────────────────────────────────────────────────────────────
 eval "$(/opt/homebrew/bin/brew shellenv)"
@@ -109,3 +110,20 @@ eval "$(zoxide init zsh --cmd cd)"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# ── Ghostty per-project tab tinting ───────────────────────────────────────────
+# [[ -f ~/.config/ghostty/ghostty-colors.zsh ]] && source ~/.config/ghostty/ghostty-colors.zsh
+
+
+# Added by Antigravity CLI installer
+export PATH="/Users/juppy/.local/bin:$PATH"
+
+# Use the Nplus Claude Code config when inside ~/Nplus (any subdir); default elsewhere
+claude() {
+  case "$PWD/" in
+    "$HOME"/Nplus/*)
+      CLAUDE_CONFIG_DIR="$HOME/.claude-nplus" command claude "$@" ;;
+    *)
+      command claude "$@" ;;
+  esac
+}

@@ -1,0 +1,88 @@
+<h2>Pick the foreground brightness on pure black</h2>
+<p class="subtitle">Same Tokyo Nebula Andromeda palette, background forced to #000000. Only the main text (foreground) color changes between options. Click the one that reads best to you.</p>
+
+<style>
+  .term {
+    background: #000000;
+    border: 1px solid #1a1a22;
+    border-radius: 8px;
+    padding: 14px 16px;
+    font-family: "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
+    font-size: 13px;
+    line-height: 1.55;
+    overflow-x: auto;
+  }
+  .term .dim { opacity: 0.55; }
+  .c-grn { color: #7ce38b; }
+  .c-blu { color: #7aa2f7; }
+  .c-cya { color: #00d4ff; }
+  .c-yel { color: #ffd866; }
+  .c-red { color: #ff6188; }
+  .c-mag { color: #a78bfa; }
+  .c-wht { color: #c0caf5; }
+  .sel { background: #283457; }
+  .opt-meta { font-size: 12px; color: #8a8a9a; margin: 6px 2px 0; }
+  .ratio { font-variant-numeric: tabular-nums; }
+</style>
+
+<div class="options">
+
+  <div class="option" data-choice="a" onclick="toggleSelect(this)">
+    <div class="letter">A</div>
+    <div class="content" style="width:100%">
+      <h3>Bright — <code>#c0caf5</code></h3>
+      <div class="term" style="color:#c0caf5">
+        <div><span class="c-grn">paolo</span> <span class="dim">in</span> <span class="c-blu">~/.config/ghostty/themes</span></div>
+        <div><span class="c-mag">❯</span> ls themes/</div>
+        <div><span class="c-blu">tokyo-nebula-andromeda</span>   <span class="c-blu">tokyo-nebula-eclipse</span></div>
+        <div>The quick brown fox jumps over the lazy dog. <span class="c-yel">1234567890</span></div>
+        <div><span class="c-grn">+</span> added line   <span class="c-red">-</span> removed line   <span class="sel">selected text</span></div>
+      </div>
+      <div class="opt-meta">High contrast (~<span class="ratio">14:1</span>). Crispest, most "awake" look. Can feel intense for long sessions.</div>
+    </div>
+  </div>
+
+  <div class="option" data-choice="b" onclick="toggleSelect(this)">
+    <div class="letter">B</div>
+    <div class="content" style="width:100%">
+      <h3>Balanced — <code>#a9b1d6</code> <span style="font-weight:400;color:#8a8a9a">(Tokyo Night default)</span></h3>
+      <div class="term" style="color:#a9b1d6">
+        <div><span class="c-grn">paolo</span> <span class="dim">in</span> <span class="c-blu">~/.config/ghostty/themes</span></div>
+        <div><span class="c-mag">❯</span> ls themes/</div>
+        <div><span class="c-blu">tokyo-nebula-andromeda</span>   <span class="c-blu">tokyo-nebula-eclipse</span></div>
+        <div>The quick brown fox jumps over the lazy dog. <span class="c-yel">1234567890</span></div>
+        <div><span class="c-grn">+</span> added line   <span class="c-red">-</span> removed line   <span class="sel">selected text</span></div>
+      </div>
+      <div class="opt-meta">Strong contrast (~<span class="ratio">11:1</span>). Comfortable for long reading, still clearly brighter than the original.</div>
+    </div>
+  </div>
+
+  <div class="option" data-choice="c" onclick="toggleSelect(this)">
+    <div class="letter">C</div>
+    <div class="content" style="width:100%">
+      <h3>Soft — <code>#9aa5ce</code></h3>
+      <div class="term" style="color:#9aa5ce">
+        <div><span class="c-grn">paolo</span> <span class="dim">in</span> <span class="c-blu">~/.config/ghostty/themes</span></div>
+        <div><span class="c-mag">❯</span> ls themes/</div>
+        <div><span class="c-blu">tokyo-nebula-andromeda</span>   <span class="c-blu">tokyo-nebula-eclipse</span></div>
+        <div>The quick brown fox jumps over the lazy dog. <span class="c-yel">1234567890</span></div>
+        <div><span class="c-grn">+</span> added line   <span class="c-red">-</span> removed line   <span class="sel">selected text</span></div>
+      </div>
+      <div class="opt-meta">Medium contrast (~<span class="ratio">9:1</span>). Muted/calm, but still a big jump from the original #787c99 (~5:1).</div>
+    </div>
+  </div>
+
+  <div class="option" data-choice="orig" onclick="toggleSelect(this)">
+    <div class="letter">×</div>
+    <div class="content" style="width:100%">
+      <h3>Reference: original — <code>#787c99</code></h3>
+      <div class="term" style="color:#787c99">
+        <div><span class="c-grn">paolo</span> <span class="dim">in</span> <span class="c-blu">~/.config/ghostty/themes</span></div>
+        <div><span class="c-mag">❯</span> ls themes/</div>
+        <div>The quick brown fox jumps over the lazy dog. <span class="c-yel">1234567890</span></div>
+      </div>
+      <div class="opt-meta">This is Andromeda's current foreground on black — shown only so you can feel the difference. (~5:1, the dim look you're moving away from.)</div>
+    </div>
+  </div>
+
+</div>

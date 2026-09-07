@@ -1,0 +1,4 @@
+plugins https://github.com/MichaelAquilina/zsh-you-should-use.git
+plugins https://github.com/zsh-users/zsh-autosuggestions
+plugins https://github.com/fdellwing/zsh-bat.git
+plugins https://github.com/zsh-users/zsh-syntax-highlighting.git

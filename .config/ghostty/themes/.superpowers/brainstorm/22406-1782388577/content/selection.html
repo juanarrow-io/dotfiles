@@ -1,0 +1,65 @@
+<h2>Pick the selection highlight</h2>
+<p class="subtitle">Pure black background, foreground #a9b1d6, cursor #c0caf5. Drag-select look shown on the highlighted line. Click your preferred selection style.</p>
+
+<style>
+  .term {
+    background: #000000;
+    border: 1px solid #1a1a22;
+    border-radius: 8px;
+    padding: 14px 16px;
+    font-family: "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
+    font-size: 13px;
+    line-height: 1.6;
+    color: #a9b1d6;
+    overflow-x: auto;
+  }
+  .c-grn { color: #7ce38b; }
+  .c-blu { color: #7aa2f7; }
+  .c-mag { color: #a78bfa; }
+  .c-yel { color: #ffd866; }
+  .cur { background:#c0caf5; color:#000; }
+  .opt-meta { font-size: 12px; color: #8a8a9a; margin: 6px 2px 0; }
+</style>
+
+<div class="options">
+
+  <div class="option" data-choice="a" onclick="toggleSelect(this)">
+    <div class="letter">A</div>
+    <div class="content" style="width:100%">
+      <h3>Muted navy — bg <code>#283457</code>, fg <code>#c0caf5</code></h3>
+      <div class="term">
+        <div><span class="c-mag">❯</span> git diff --stat</div>
+        <div style="background:#283457;color:#c0caf5"> themes/tokyo-nebula-andromeda-void | 23 ++++++++++ </div>
+        <div>regular foreground text after the selection<span class="cur">&nbsp;</span></div>
+      </div>
+      <div class="opt-meta">Subtle, low-glare. Selected text brightens to #c0caf5. Sits calmly on black — my recommendation.</div>
+    </div>
+  </div>
+
+  <div class="option" data-choice="b" onclick="toggleSelect(this)">
+    <div class="letter">B</div>
+    <div class="content" style="width:100%">
+      <h3>Original Andromeda — bg <code>#56658d</code>, fg <code>#c0caf5</code></h3>
+      <div class="term">
+        <div><span class="c-mag">❯</span> git diff --stat</div>
+        <div style="background:#56658d;color:#c0caf5"> themes/tokyo-nebula-andromeda-void | 23 ++++++++++ </div>
+        <div>regular foreground text after the selection<span class="cur">&nbsp;</span></div>
+      </div>
+      <div class="opt-meta">Brighter, more prominent highlight (Andromeda's own value, with fg bumped to #c0caf5). More pop, slightly more glare on pure black.</div>
+    </div>
+  </div>
+
+  <div class="option" data-choice="c" onclick="toggleSelect(this)">
+    <div class="letter">C</div>
+    <div class="content" style="width:100%">
+      <h3>Deep slate — bg <code>#1e2740</code>, fg <code>#c0caf5</code></h3>
+      <div class="term">
+        <div><span class="c-mag">❯</span> git diff --stat</div>
+        <div style="background:#1e2740;color:#c0caf5"> themes/tokyo-nebula-andromeda-void | 23 ++++++++++ </div>
+        <div>regular foreground text after the selection<span class="cur">&nbsp;</span></div>
+      </div>
+      <div class="opt-meta">Darkest/most understated. Blends close to black — good if you find highlights distracting, but the boundary is fainter.</div>
+    </div>
+  </div>
+
+</div>
